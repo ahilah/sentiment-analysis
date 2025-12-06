@@ -89,3 +89,33 @@ The application should automatically open in your web browser.
 ├── README.md               # This file
 └── requirements.txt        # List of dependencies
 ```
+
+
+## Model Performance
+
+Comparison of the Deep Learning model and the best-performing classic ML models on the test dataset.
+
+| Model | Accuracy | Precision | Recall | F1-Score |
+| :--- | :---: | :---: | :---: | :---: |
+| **Bi-LSTM (Neural Network)** | **79.1%** | 0.79 | 0.79 | 0.79 |
+| **Logistic Regression** | **79.0%** | 0.79 | 0.79 | 0.79 |
+| **Linear SVC** | **78.0%** | 0.78 | 0.78 | 0.78 |
+| **Multinomial Naive Bayes** | **77.0%** | 0.77 | 0.77 | 0.77 |
+
+> **Note:** While Logistic Regression shows similar accuracy, the **Bi-LSTM** model demonstrates superior performance on complex sentences involving sarcasm and negation due to its context-aware architecture.
+
+---
+
+## Tech Stack & Environment
+
+This project was developed using the following technologies:
+
+| Category | Technology | Version Used |
+| :--- | :--- | :--- |
+| **Language** | Python | `3.10.x` |
+| **Web Framework** | Streamlit | `1.32.0` |
+| **Deep Learning** | TensorFlow / Keras | `2.15.0` |
+| **Machine Learning** | Scikit-learn | `1.4.0` |
+| **NLP Library** | NLTK | `3.8.1` |
+| **Data Manipulation** | Pandas | `2.2.0` |
+| **Visualization** | Matplotlib / Seaborn | `3.8.0` |

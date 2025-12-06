@@ -1,0 +1,22 @@
+[theme]
+# Use light theme as the base
+base="light"
+
+# Main brand color (for buttons, links, etc.)
+# I'm using your #1E90FF (DodgerBlue)
+primaryColor="#1E90FF"
+
+# Main page background color
+backgroundColor="#FFFFFF"
+
+# Background color for sidebars and containers
+secondaryBackgroundColor="#F0F4F8" # Наш світло-блакитний
+
+# Default text color
+textColor="#0a0a0a" # Майже чорний
+
+# Font
+font="sans serif"
+
+[server]
+maxUploadSize = 1

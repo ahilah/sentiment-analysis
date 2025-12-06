@@ -1,0 +1,294 @@
+/* --- Global & Theme --- */
+[data-testid="stAppViewContainer"] {
+  background-color: #f0f4f8; /* Light blue-gray background */
+}
+
+/* --- Global Headers (h2) --- */
+h2 {
+  color: #1e3a8a; /* Dark, rich blue (not black) */
+  font-weight: 600;
+  border-bottom: 2px solid #d2e6ff; /* Pastel blue underline */
+  padding-bottom: 8px;
+}
+
+/* --- Home Page: Hero Section --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-section {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #e0f2ff 0%, #b9e0ff 100%);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease-out;
+}
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1e3a8a !important;
+  margin: 0;
+}
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #4a5568;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Home Page: Interactive Example Buttons --- */
+.example-button-container div[data-testid="stButton"] > button {
+  background-color: #ffffff;
+  color: #374151;
+  border: 1px solid #e0e7ff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 500;
+  font-style: italic;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 120px;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+.example-button-container div[data-testid="stButton"] > button:hover {
+  background-color: #f0f9ff;
+  border-color: #3b82f6;
+  color: #1e3a8a;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
+}
+.example-button-container div[data-testid="stButton"] > button:focus {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
+  border-color: #3b82f6;
+}
+
+/* --- General Card Style (Used on Home, Workflow) --- */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e0e7ff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease-in-out;
+  height: 100%;
+}
+.card:hover {
+  background-color: #f0f9ff; /* Pastel blue background */
+  border-color: #3b82f6;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
+  transform: translateY(-5px); /* Lift effect */
+}
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+/* --- Metric Box (Used on Home, Demo) --- */
+.metric-box {
+  background-color: #ffffff;
+  border: 1px solid #e0e7ff;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+.metric-label {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+.metric-value-positive {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+.metric-value-negative {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #dc2626;
+}
+.metric-value-neutral {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #6b7280;
+}
+.metric-confidence {
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* --- (UPDATED) Workflow Tab --- */
+.workflow-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* (FIX) Switched to center */
+  align-items: center;
+  gap: 1.5rem; /* (NEW) Adds space between all items */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.workflow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 170px; /* (UPDATED) Slightly wider */
+  padding: 1.5rem 1rem;
+  background-color: #ffffff;
+  border: 1px solid #e0e7ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease-in-out;
+  min-height: 250px; /* (FIX) Changed from height to min-height */
+}
+.workflow-step:hover {
+  background-color: #f0f9ff;
+  border-color: #3b82f6;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
+}
+.workflow-icon {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+.workflow-step h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #333;
+}
+.workflow-step p {
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.workflow-arrow {
+  font-size: 2.5rem;
+  color: #3b82f6;
+  margin-top: 0;
+  animation: pulse 2s infinite ease-in-out;
+}
+.use-case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+/* --- Footer Styles --- */
+.footer-divider {
+  border: none;
+  border-top: 1px solid #e0e7ff; /* Light blue border */
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.footer-container {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+  padding-bottom: 2rem;
+}
+.footer-text {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.social-icon {
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+.social-icon.fa-facebook-f {
+  color: #1877f2;
+}
+.social-icon.fa-instagram {
+  color: #e4405f !important;
+}
+.social-icon.fa-twitter {
+  color: #1da1f2;
+}
+.social-icon.fa-linkedin-in {
+  color: #0a66c2;
+}
+.social-icon.fa-github {
+  color: #181717;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/* --- Demo Tab Input Styles --- */
+[data-testid="stTextArea"] {
+  background-color: #ffffff;
+  border: 1px solid #e0e7ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease-in-out;
+}
+[data-testid="stTextArea"]:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
+}
+[data-testid="stTextArea"] p {
+  color: #111827;
+}
+[data-testid="stFileUploader"] {
+  background-color: #ffffff;
+  border: 1px solid #e0e7ff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease-in-out;
+}
+[data-testid="stFileUploader"]:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
+}
+div[data-testid="stDownloadButton"]
+  > button[data-testid*="download_single_json"] {
+  background-color: #ffffff;
+  color: #3b82f6;
+  border: 1px solid #3b82f6;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+}
+div[data-testid="stDownloadButton"]
+  > button[data-testid*="download_single_json"]:hover {
+  background-color: #f0f9ff;
+  color: #2563eb;
+  border-color: #2563eb;
+}
+

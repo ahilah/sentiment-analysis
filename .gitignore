@@ -1,0 +1,83 @@
+--- Python & Virtual Environments ---
+
+Python cache files
+
+pycache/
+*.pyc
+*.pyo
+*.pyd
+
+Virtual environment folders
+
+.venv/
+venv/
+env/
+*.env
+
+Dependency packages
+
+*.egg-info/
+dist/
+build/
+
+--- IDE & OS Specific ---
+
+VSCode
+
+.vscode/
+
+PyCharm
+
+.idea/
+
+macOS
+
+.DS_Store
+
+Windows
+
+Thumbs.db
+
+--- Jupyter Notebook ---
+
+Checkpoint files
+
+.ipynb_checkpoints/
+
+--- Streamlit ---
+
+Do not commit your local secrets!
+
+.streamlit/secrets.toml
+
+--- Data & Model Files ---
+
+Ignore all large data files
+
+*.csv
+*.parquet
+*.txt
+
+Ignore saved models (Keras and Pickle)
+
+*.keras
+*.h5
+*.pkl
+
+--- (IMPORTANT) Exceptions ---
+
+We MUST keep the requirements file
+
+!requirements.txt
+
+Keep any assets inside the app folder
+
+(This un-ignores your favicon.png, styles.css, etc.)
+
+!app/assets/*
+!app/assets/image/*
+
+Keep any .txt files inside your app (if you add any)
+
+!app/**/*.txt
+dataset/orig/archive.zip

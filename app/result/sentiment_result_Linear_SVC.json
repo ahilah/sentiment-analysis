@@ -1,0 +1,8 @@
+{
+    "model_used": "Linear SVC",
+    "text": "This is a wonderful product, I am very happy!",
+    "sentiment": "Positive",
+    "confidence_percent": "100.00",
+    "analysis_timestamp_local": "2025-11-27T20:40:05.527986+02:00",
+    "timezone": "EET"
+}

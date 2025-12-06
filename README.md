@@ -6,6 +6,13 @@
 
 This repository contains the application source code. *The model files and datasets are hosted externally due to their large size.*
 
+Key Features
+- Real-time Analysis: Instant sentiment classification with confidence scores.
+- Batch Processing: Support for uploading .csv or .txt files for bulk analysis.
+- Smart Thresholding: Custom logic to identify "Neutral" sentiment based on model confidence.
+- Model Comparison: Switch between Deep Learning and Classic ML models on the fly.
+- Interactive Visualizations: Training history, confusion matrices, and data distribution charts.
+
 ---
 
 ## How to Run this Project
@@ -81,7 +88,4 @@ The application should automatically open in your web browser.
 ├── app.py                  # Main Streamlit entry point
 ├── README.md               # This file
 └── requirements.txt        # List of dependencies
-```
-
-```
 ```

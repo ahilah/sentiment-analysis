@@ -43,15 +43,13 @@ This project requires large model and component files that are not included in t
 
 | File                        | Target Folder      | Purpose                                  | Download Link |
 |-----------------------------|---------------------|-------------------------------------------|---------------|
-| best_model_initial.keras    | model/nn/           | The trained Keras (LSTM) model            | [Download](https://drive.google.com/file/d/1L6IYhbWj48c0itEHVZPlIEF1s9xeU82F/view?usp=sharing)
-          |
-| keras_tokenizer.pkl         | model/component/    | Tokenizer for NN model                    | [Download](https://drive.google.com/file/d/1L1H0jRGRjFlaQXu8lZxhcqZ43D9eIrfY/view?usp=sharing)            |
-| label_encoder.pkl           | model/component/    | Label Encoder for target variable         | [Download](https://drive.google.com/file/d/1yy4Haf7rmZ8vz6Hkl7Q6UIne7PqI4grr/view?usp=sharing)            |
-| tfidf_vectorizer_ngrams.pkl | model/component/    | TF-IDF Vectorizer for Sklearn models      | [Download](https://drive.google.com/file/d/17K50xR6W3H7K0DSW4pUmGBSKZOHvf7iY/view?usp=sharing)            |
-| LR_ngrams.pkl               | model/sklearn/      | Logistic Regression model                 | [Download](https://drive.google.com/file/d/1l6rcDASgYWdYHtJhGPk74F75UrwwacWN/view?usp=sharing)            |
-| SVC_ngrams.pkl              | model/sklearn/      | Linear SVC model                          | [Download](https://drive.google.com/file/d/1hcRVilHiiNstqBoQk8c7ceiGBQbUoj6b/view?usp=sharing)            |
-| MNB_ngrams.pkl              | model/sklearn/      | Multinomial Naive Bayes model             | [Download](https://drive.google.com/file/d/1Q3iqERSFIOs3z3pOgVLAfLtT8KCQlbEu/view?usp=sharing)            |
-
+| best_model_initial.keras    | model/nn/           | The trained Keras (LSTM) model            | [Download](https://drive.google.com/file/d/1L6IYhbWj48c0itEHVZPlIEF1s9xeU82F/view?usp=sharing)|
+| keras_tokenizer.pkl         | model/component/    | Tokenizer for NN model                    | [Download](https://drive.google.com/file/d/1L1H0jRGRjFlaQXu8lZxhcqZ43D9eIrfY/view?usp=sharing)|
+| label_encoder.pkl           | model/component/    | Label Encoder for target variable         | [Download](https://drive.google.com/file/d/1yy4Haf7rmZ8vz6Hkl7Q6UIne7PqI4grr/view?usp=sharing)|
+| tfidf_vectorizer_ngrams.pkl | model/component/    | TF-IDF Vectorizer for Sklearn models      | [Download](https://drive.google.com/file/d/17K50xR6W3H7K0DSW4pUmGBSKZOHvf7iY/view?usp=sharing)|
+| LR_ngrams.pkl               | model/sklearn/      | Logistic Regression model                 | [Download](https://drive.google.com/file/d/1l6rcDASgYWdYHtJhGPk74F75UrwwacWN/view?usp=sharing)|
+| SVC_ngrams.pkl              | model/sklearn/      | Linear SVC model                          | [Download](https://drive.google.com/file/d/1hcRVilHiiNstqBoQk8c7ceiGBQbUoj6b/view?usp=sharing)|
+| MNB_ngrams.pkl              | model/sklearn/      | Multinomial Naive Bayes model             | [Download](https://drive.google.com/file/d/1Q3iqERSFIOs3z3pOgVLAfLtT8KCQlbEu/view?usp=sharing)|
 
 
 ### 3\. Run the App

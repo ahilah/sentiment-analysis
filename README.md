@@ -17,8 +17,8 @@ To run this application on your local machine, please follow these steps.
 First, clone this repository to your computer:
 
 ```bash
-git clone [your-github-repo-link]
-cd [your-project-folder-name]
+git clone [https://github.com/ahilah/sentiment-analysis.git](https://github.com/ahilah/sentiment-analysis.git)
+cd sentiment-analysis
 ```
 
 Next, create a virtual environment and install the required Python packages:
@@ -37,22 +37,22 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 2\. (IMPORTANT) Download Required Files 
+### 2\. Download Required Files 
 
 This project requires large model and component files that are not included in this Git repository. **You must download them manually.**
 
-| File | Purpose | Download Link |
-| :--- | :--- | :--- |
-| `best_model_fine_tuned.keras` | The trained Keras (LSTM) model | [] |
-| `keras_tokenizer.pkl` | The Keras Tokenizer | [] |
-| `label_encoder.pkl` | The SKlearn Label Encoder | [] |
+| File                        | Target Folder      | Purpose                                  | Download Link |
+|-----------------------------|---------------------|-------------------------------------------|---------------|
+| best_model_initial.keras    | model/nn/           | The trained Keras (LSTM) model            | [Download Link](https://drive.google.com/file/d/1L6IYhbWj48c0itEHVZPlIEF1s9xeU82F/view?usp=sharing)
+            |
+| keras_tokenizer.pkl         | model/component/    | Tokenizer for NN model                    | [Download Link](https://drive.google.com/file/d/1L1H0jRGRjFlaQXu8lZxhcqZ43D9eIrfY/view?usp=sharing)            |
+| label_encoder.pkl           | model/component/    | Label Encoder for target variable         | [Download Link](https://drive.google.com/file/d/1yy4Haf7rmZ8vz6Hkl7Q6UIne7PqI4grr/view?usp=sharing)            |
+| tfidf_vectorizer_ngrams.pkl | model/component/    | TF-IDF Vectorizer for Sklearn models      | [Download Link](https://drive.google.com/file/d/17K50xR6W3H7K0DSW4pUmGBSKZOHvf7iY/view?usp=sharing)            |
+| LR_ngrams.pkl               | model/sklearn/      | Logistic Regression model                 | [Download Link](https://drive.google.com/file/d/1l6rcDASgYWdYHtJhGPk74F75UrwwacWN/view?usp=sharing)            |
+| SVC_ngrams.pkl              | model/sklearn/      | Linear SVC model                          | [Download Link](https://drive.google.com/file/d/1hcRVilHiiNstqBoQk8c7ceiGBQbUoj6b/view?usp=sharing)            |
+| MNB_ngrams.pkl              | model/sklearn/      | Multinomial Naive Bayes model             | [Download Link](https://drive.google.com/file/d/1Q3iqERSFIOs3z3pOgVLAfLtT8KCQlbEu/view?usp=sharing)            |
 
-#### Where to place the files:
 
-Once downloaded, you must place the files in the **correct folders** before running the app:
-
-  * Move **`best_model_fine_tuned.keras`** into: `model/nn/`
-  * Move **`keras_tokenizer.pkl`** and **`label_encoder.pkl`** into: `model/component/`
 
 ### 3\. Run the App
 
@@ -70,18 +70,19 @@ The application should automatically open in your web browser.
 
 ```text
 ├── .streamlit/
-│   └── config.toml     # App theme configuration
+│   └── config.toml         # App theme configuration
 ├── app/
-│   ├── assets/         # CSS, fonts, and icons (favicon.png)
-│   ├── core/           # Backend logic (predictor.py, processor.py)
-│   ├── ui_tabs/        # Python files for each Streamlit tab
-│   └── app.py          # Main Streamlit application file
+│   ├── assets/             # CSS, fonts, and icons (favicon.png)
+│   ├── core/               # Backend logic (predictor.py, config.py)
+│   └── ui_tabs/            # Python files for each Streamlit tab (Home, Demo, etc.)
 ├── model/
-│   ├── component/      # (Place .pkl files here)
-│   └── nn/             # (Place .keras model here)
+│   ├── component/          # (Place .pkl tokenizers/encoders here)
+│   ├── nn/                 # (Place .keras model here)
+│   └── sklearn/            # (Place .pkl ML models here)
 ├── .gitignore
-├── README.md           # This file
-└── requirements.txt
+├── app.py                  # Main Streamlit entry point
+├── README.md               # This file
+└── requirements.txt        # List of dependencies
 ```
 
 ```
